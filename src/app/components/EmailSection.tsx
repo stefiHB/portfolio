@@ -10,32 +10,6 @@ import Image from "next/image";
 const EmailSection = () => {
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
-        }
-
-        const dataJSON = JSON.stringify(data);
-        const endpoint = '/api/send'
-
-        const options = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: dataJSON
-        }
-
-        const response = await fetch(endpoint, options);
-        const resData = await response.json()
-        console.log('resData', resData)
-        if (response.status === 200) {
-            console.log('Message sent.')
-        }
-
-
     }
 
     return <>
