@@ -58,7 +58,7 @@ const ProjectSection = () => {
     const ref = useRef(null)
     const isInView = useInView(ref, {once: true})
 
-    const handleTagChange = (newTag) => {
+    const handleTagChange = (newTag: string) => {
         setTag(newTag)
     }
 
@@ -107,7 +107,6 @@ const ProjectSection = () => {
                             title={project.title}
                             description={project.description}
                             imageUrl={project.image}
-                            tags={project.tag}
                             gitUrl={project.gitUrl}
                             previewUrl={project.previewUrl}
                         />

@@ -9,7 +9,8 @@ import Image from "next/image";
 
 const EmailSection = () => {
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async () => {
+        console.log('send email')
     }
 
     return <>

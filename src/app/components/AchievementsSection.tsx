@@ -12,14 +12,10 @@ const ACHIEVEMENTS_LIST = [
         value: 5,
         postfix: 'K'
     },
-    // {
-    //     metric: 'Awards',
-    //     value: 7,
-    // },
     {
         metric: 'Years',
         value: 4,
-
+        postfix: ''
     },
 
 ]
@@ -38,7 +34,6 @@ const AchievementsSection = () => {
                             className={"flex flex-col items-center justify-center mx-4"}
                         >
                             <h2 className={"text-red text-4xl font-bold flex flex-row"}>
-                                {achievement.hasOwnProperty('prefix') && achievement['prefix']}
                                 {achievement.value}
                                 {achievement.hasOwnProperty('postfix') && achievement['postfix']}
                             </h2>
